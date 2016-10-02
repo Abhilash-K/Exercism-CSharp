@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using Exercism_CSharp.csharp.bob;
 
 [TestFixture]
 public class BobTest
@@ -9,14 +10,14 @@ public class BobTest
         Assert.That(Bob.Hey("Tom-ay-to, tom-aaaah-to."), Is.EqualTo("Whatever."));
     }
 
-    [Ignore("Remove to run test")]
+    //[Ignore("Remove to run test")]
     [Test]
     public void Shouting ()
     {
         Assert.That(Bob.Hey("WATCH OUT!"), Is.EqualTo("Whoa, chill out!"));
     }
 
-    [Ignore("Remove to run test")]
+    //[Ignore("Remove to run test")]
     [Test]
     public void Asking_a_question ()
     {
